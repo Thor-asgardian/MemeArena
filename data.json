@@ -1,0 +1,14 @@
+{
+  "users": {
+    "admin": {
+      "password_hash": "",
+      "is_admin": true
+    },
+    "ankitha": {
+      "password_hash": "scrypt:32768:8:1$jna1Kb4SL0THhS9F$2a2bbd34faf05dee4e629bf02f1adc55b2bc42aa5995f6ddf4302855893b298e7dcf06e5722384d0594ea80902acf46b6c013f2a32cd5f444c466ec7e57ef87d",
+      "is_admin": false
+    }
+  },
+  "memes": [],
+  "next_meme_id": 1
+}

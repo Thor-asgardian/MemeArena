@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Upload Meme</h2>
+<form method="post" enctype="multipart/form-data" class="form">
+  <label>Caption
+    <input name="caption" maxlength="200" placeholder="Say something funny...">
+  </label>
+  <label>Image
+    <input name="image" type="file" accept="image/*" required>
+  </label>
+  <button class="btn" type="submit">Upload</button>
+</form>
+{% endblock %}

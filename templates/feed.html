@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Feed</h2>
+{% if memes %}
+  <div class="grid">
+    {% for m in memes %}
+      <div class="card">
+        <img src="{{ url_for('uploaded_file', filename=m.image) }}" alt="meme image" class="meme-img">
+        <div class="card-body">
+          <p class="caption">{{ m.caption or "(no caption)" }}</p>
+          <p class="meta">By <strong>{{ m.author }}</strong> • {{ m.created_at[:19].replace('T',' ') }}</p>
+          <div class="actions">
+            <form method="post" action="{{ url_for('vote', meme_id=m.id) }}">
+              <input type="hidden" name="action" value="up">
+              <button class="vote-btn" type="submit" title="Upvote">
+                ▲ {% if m.my_vote == 1 %}(you){% endif %}
+              </button>
+            </form>
+
+            <span class="score">{{ m.score }}</span>
+
+            <form method="post" action="{{ url_for('vote', meme_id=m.id) }}">
+              <input type="hidden" name="action" value="down">
+              <button class="vote-btn" type="submit" title="Downvote">
+                ▼ {% if m.my_vote == -1 %}(you){% endif %}
+              </button>
+            </form>
+
+            {% if session.username and session.username == m.author %}
+              <small class="owner">Your post</small>
+            {% endif %}
+
+            {% if session.username %}
+              {% set user = session.username %}
+              {% set data = None %} {# no-op so jinja doesn't error in some setups #}
+            {% endif %}
+
+            {% if session.username and loop and session.username %}
+              {% if session.username and (session.username in session) %}{% endif %}
+            {% endif %}
+
+            {% if session.username %}
+              {% set is_admin = false %}
+              {# determine admin from server-side: safer to expose via template if needed. #}
+            {% endif %}
+
+            {% if session and session.get('username') %}
+              {# show delete to admins only; but server also checks admin_required #}
+              {% if session.get('username') and session.get('username') == 'admin' %}
+                <form method="post" action="{{ url_for('delete_meme', meme_id=m.id) }}" onsubmit="return confirm('Delete this meme?');">
+                  <button class="del-btn" type="submit">Delete</button>
+                </form>
+              {% endif %}
+            {% endif %}
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+{% else %}
+  <p>No memes yet — be the first to upload!</p>
+{% endif %}
+{% endblock %}
