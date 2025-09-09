@@ -14,7 +14,7 @@
             <form method="post" action="{{ url_for('vote', meme_id=m.id) }}">
               <input type="hidden" name="action" value="up">
               <button class="vote-btn" type="submit" title="Upvote">
-                ▲ {% if m.my_vote == 1 %}(you){% endif %}
+                ▲ {% if m.my_vote == 1 %}{% endif %}
               </button>
             </form>
 
@@ -23,7 +23,7 @@
             <form method="post" action="{{ url_for('vote', meme_id=m.id) }}">
               <input type="hidden" name="action" value="down">
               <button class="vote-btn" type="submit" title="Downvote">
-                ▼ {% if m.my_vote == -1 %}(you){% endif %}
+                ▼ {% if m.my_vote == -1 %}{% endif %}
               </button>
             </form>
 

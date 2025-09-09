@@ -15,6 +15,18 @@
     "Yashaswini": {
       "password_hash": "scrypt:32768:8:1$s1Uya8BTnPBZk41o$f25fffe5632ee6f8b042ddf22a34f349194c851ea08b5438920f0daf2302f4ad8b2d6455f655fa2412cd31797810c603665ccb33f4e38b74b9f83d1dea8e2f8b",
       "is_admin": false
+    },
+    "Saanvi": {
+      "password_hash": "scrypt:32768:8:1$Sf8cQn5d8MIxdkGC$2c0cfde840555decdb1e404b1779ca299e587bf92dc10e1aa1a5ebf882f586c52e8408c1088c31591c2813262b77da66cb2a8153e76462612248cd4b1666d2c8",
+      "is_admin": false
+    },
+    "wednesday": {
+      "password_hash": "scrypt:32768:8:1$I5Hc0YU2Hc4Is5Kw$73bcf3791db7329d1304f0fdb36280a4457fc566ec4d4649f0b84e89f7ea0ab3c8a3cfcf08dc0ed3552361d3273ad8de133c7e5775e327c12594d7a3b188e8ab",
+      "is_admin": false
+    },
+    "happy": {
+      "password_hash": "scrypt:32768:8:1$qIFpXN2sqwNluC9W$48905a44ca723b727ae1f5c3810e5b6751e225a73b32bc5c470926f63da1aefa35a41507fb413cb6edb2f32611dde73843212705a3af99af2d2d54f7af97c2ba",
+      "is_admin": false
     }
   },
   "memes": [
@@ -42,7 +54,9 @@
       "image": "1757339071_10cecb11-76e7-421a-9019-96001ad23d90.jpg",
       "author": "peter parker",
       "created_at": "2025-09-08T19:14:31.728896",
-      "votes": {}
+      "votes": {
+        "ankitha": 1
+      }
     },
     {
       "id": 4,
@@ -89,7 +103,9 @@
       "image": "1757401409_sing.webp",
       "author": "Yashaswini",
       "created_at": "2025-09-09T12:33:29.327322",
-      "votes": {}
+      "votes": {
+        "ankitha": 1
+      }
     },
     {
       "id": 11,
@@ -98,9 +114,68 @@
       "author": "Yashaswini",
       "created_at": "2025-09-09T12:51:59.662719",
       "votes": {
-        "Yashaswini": 1
+        "Yashaswini": 1,
+        "ankitha": -1
       }
+    },
+    {
+      "id": 12,
+      "caption": "\ud83d\ude2d\ud83d\ude29",
+      "image": "1757415176_repeat.webp",
+      "author": "ankitha",
+      "created_at": "2025-09-09T16:22:56.429500",
+      "votes": {}
+    },
+    {
+      "id": 13,
+      "caption": "\ud83d\ude0e",
+      "image": "1757417255_homework-shock.jpg",
+      "author": "ankitha",
+      "created_at": "2025-09-09T16:57:35.856231",
+      "votes": {
+        "ankitha": 1
+      }
+    },
+    {
+      "id": 14,
+      "caption": "Hahahah!!",
+      "image": "1757418430_simpson.jpg",
+      "author": "ankitha",
+      "created_at": "2025-09-09T17:17:10.968029",
+      "votes": {
+        "Saanvi": 1,
+        "happy": 1,
+        "ankitha": -1
+      }
+    },
+    {
+      "id": 15,
+      "caption": "\ud83d\ude05\ud83d\ude05",
+      "image": "1757418634_sing.webp",
+      "author": "Saanvi",
+      "created_at": "2025-09-09T17:20:34.842451",
+      "votes": {
+        "ankitha": 1
+      }
+    },
+    {
+      "id": 16,
+      "caption": "\ud83d\udc40\ud83d\udc40",
+      "image": "1757419083_funny-meme.jpg",
+      "author": "happy",
+      "created_at": "2025-09-09T17:28:03.252768",
+      "votes": {
+        "happy": 1
+      }
+    },
+    {
+      "id": 17,
+      "caption": "\ud83e\udee3",
+      "image": "1757419391_funny-memes2.jpg",
+      "author": "ankitha",
+      "created_at": "2025-09-09T17:33:11.594500",
+      "votes": {}
     }
   ],
-  "next_meme_id": 12
+  "next_meme_id": 18
 }

@@ -207,9 +207,7 @@ def delete_meme(meme_id):
 def uploaded_file(filename):
     return send_from_directory(app.config["UPLOAD_FOLDER"], filename)
 
-# ---------------------
-# Run
-# ---------------------
+
 if __name__ == "__main__":
     # create data file if missing
     if not os.path.exists(DATA_FILE):
