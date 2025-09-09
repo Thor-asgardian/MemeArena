@@ -9,7 +9,7 @@ from werkzeug.utils import secure_filename
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 DATA_FILE = os.path.join(BASE_DIR, "data.json")
 UPLOAD_FOLDER = os.path.join(BASE_DIR, "static", "uploads")
-ALLOWED_EXT = {"png", "jpg", "jpeg", "gif"}
+ALLOWED_EXT = {"png", "jpg", "jpeg", "gif","webp"}
 
 app = Flask(__name__)
 app.secret_key = "replace-this-with-a-secure-random-key"  # change for production

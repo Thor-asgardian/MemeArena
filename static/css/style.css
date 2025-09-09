@@ -1,17 +1,17 @@
 :root{
-  --bg:#f7f7fb;
-  --card:#fff;
-  --muted:#6b6b6b;
-  --accent:#2b7cff;
+  --bg:#02d5ff;
+  --card:#0000007b;
+  --muted:#000000;
+  --accent:#f8f400;
 }
 *{box-sizing:border-box}
 body{font-family:Inter,system-ui,Segoe UI,Roboto,Helvetica,Arial; background:var(--bg); margin:0; color:#111}
 
-.nav{display:flex; justify-content:space-between; padding:12px 18px; background:#fff; box-shadow:0 1px 4px rgba(0,0,0,0.06); align-items:center}
+.nav{display:flex; justify-content:space-between; padding:12px 18px; background:#000000; box-shadow:0 1px 4px rgba(0,0,0,0.06); align-items:center}
 
 .brand{font-weight:700; text-decoration:none; color:var(--accent)}
 
-.nav-right a, .nav-right .user{margin-left:12px; text-decoration:none; color:#333}
+.nav-right a, .nav-right .user{font-family:'Times New Roman', Times, serif; font-size:18px; text-decoration:none; color:#ffffff}
 
 .container{max-width:980px; margin:20px auto; padding:0 12px}
 
@@ -22,16 +22,17 @@ body{font-family:Inter,system-ui,Segoe UI,Roboto,Helvetica,Arial; background:var
 .form input[type="text"], .form input[type="password"], .form input[type="file"]{padding:10px; border-radius:8px; border:1px solid #ddd}
 
 .btn{background:var(--accent); color:#fff; padding:10px 12px; border-radius:8px; border:none; cursor:pointer}
-
+#login_btn {background-color: #000000;}
+#register_btn {background-color: #000000;}
 .grid{display:grid; grid-template-columns:repeat(auto-fill,minmax(240px,1fr)); gap:16px}
 
-.card{background:var(--card); border-radius:10px; overflow:hidden; box-shadow:0 4px 14px rgba(0,0,0,0.06)}
+.card{background:var(--card); border-radius:10px; overflow:hidden; box-shadow:0 4px 14px rgba(255, 255, 255, 0.06)}
 
 .meme-img{width:100%; height:220px; object-fit:cover; display:block}
 
 .card-body{padding:10px 12px}
 
-.caption{margin:6px 0; font-weight:600}
+.caption{margin:6px 0; font-weight:600;font-family: monospace;}
 
 .meta{color:var(--muted); font-size:12px}
 
@@ -53,19 +54,65 @@ body{font-family:Inter,system-ui,Segoe UI,Roboto,Helvetica,Arial; background:var
 
 .flash.info{background:#e8f0ff; color:#0a3b78}
 
-.logo {
-  height: 28px;      /* adjust to fit nicely */
-  width: auto;       /* keeps aspect ratio */
-  margin-right: 8px; /* space between logo and text */
-  vertical-align: middle;
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #222;
+  padding: 10px 20px;
 }
-.brand {
+
+.nav-left {
   display: flex;
   align-items: center;
-  font-weight: 700;
-  text-decoration: none;
-  color: var(--accent);
+  gap: 10px;
 }
 
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;  /* gap between links */
+}
 
+.user {
+  margin-right: 10px;
+  color: #ddd;
+  font-weight: bold;
+}
 
+.btn-link {
+  padding: 6px 12px;
+  border-radius: 6px;
+  background: #444;
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+.btn-link:hover {
+  background: #666;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 1.5rem;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+  text-align: center;
+}
+
+.meme-img {
+  width: 100%;
+  max-height: 400px;   /* limit tall memes */
+  object-fit: contain; /* keeps full meme visible */
+}

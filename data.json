@@ -7,8 +7,100 @@
     "ankitha": {
       "password_hash": "scrypt:32768:8:1$jna1Kb4SL0THhS9F$2a2bbd34faf05dee4e629bf02f1adc55b2bc42aa5995f6ddf4302855893b298e7dcf06e5722384d0594ea80902acf46b6c013f2a32cd5f444c466ec7e57ef87d",
       "is_admin": false
+    },
+    "peter parker": {
+      "password_hash": "scrypt:32768:8:1$cNIw0QaOoL2BwkyQ$a7acfb640f24adb6c28e0facf11390ea78c4fa3c211e6504162094dd0a88b774dcddbaa7e032802375cf10825530734166a6c4ead47fc583a56ea075e65a69f3",
+      "is_admin": false
+    },
+    "Yashaswini": {
+      "password_hash": "scrypt:32768:8:1$s1Uya8BTnPBZk41o$f25fffe5632ee6f8b042ddf22a34f349194c851ea08b5438920f0daf2302f4ad8b2d6455f655fa2412cd31797810c603665ccb33f4e38b74b9f83d1dea8e2f8b",
+      "is_admin": false
     }
   },
-  "memes": [],
-  "next_meme_id": 1
+  "memes": [
+    {
+      "id": 1,
+      "caption": "When U see MATHS QP!!\ud83d\ude22",
+      "image": "1757338708_download.jpg",
+      "author": "ankitha",
+      "created_at": "2025-09-08T19:08:28.587416",
+      "votes": {
+        "peter parker": 1
+      }
+    },
+    {
+      "id": 2,
+      "caption": "Studying!!",
+      "image": "1757338745_download_1.jpg",
+      "author": "ankitha",
+      "created_at": "2025-09-08T19:09:05.829991",
+      "votes": {}
+    },
+    {
+      "id": 3,
+      "caption": "10 Y/O Sinchan...! For reason",
+      "image": "1757339071_10cecb11-76e7-421a-9019-96001ad23d90.jpg",
+      "author": "peter parker",
+      "created_at": "2025-09-08T19:14:31.728896",
+      "votes": {}
+    },
+    {
+      "id": 4,
+      "caption": "\ud83e\udd25\ud83e\udd25 HAHAHA..!!",
+      "image": "1757340383_picaccuu.webp",
+      "author": "peter parker",
+      "created_at": "2025-09-08T19:36:23.914642",
+      "votes": {
+        "Yashaswini": 1
+      }
+    },
+    {
+      "id": 5,
+      "caption": "MY MIND......During_______?",
+      "image": "1757340454_spider_man.webp",
+      "author": "peter parker",
+      "created_at": "2025-09-08T19:37:34.051321",
+      "votes": {
+        "Yashaswini": 1
+      }
+    },
+    {
+      "id": 6,
+      "caption": "\ud83d\udc40 Snack! Snack! Snack!",
+      "image": "1757340523_Caaamell.webp",
+      "author": "peter parker",
+      "created_at": "2025-09-08T19:38:43.484007",
+      "votes": {
+        "ankitha": 1,
+        "Yashaswini": 1
+      }
+    },
+    {
+      "id": 7,
+      "caption": "ofc...!",
+      "image": "1757401345_pouch.webp",
+      "author": "Yashaswini",
+      "created_at": "2025-09-09T12:32:25.202252",
+      "votes": {}
+    },
+    {
+      "id": 8,
+      "caption": "\ud83c\udfb6hmhmhmmhmm...\ud83c\udfb6",
+      "image": "1757401409_sing.webp",
+      "author": "Yashaswini",
+      "created_at": "2025-09-09T12:33:29.327322",
+      "votes": {}
+    },
+    {
+      "id": 11,
+      "caption": "Panic....!\ud83d\ude29\ud83d\ude16\ud83d\ude2b",
+      "image": "1757402519_panick.webp",
+      "author": "Yashaswini",
+      "created_at": "2025-09-09T12:51:59.662719",
+      "votes": {
+        "Yashaswini": 1
+      }
+    }
+  ],
+  "next_meme_id": 12
 }
